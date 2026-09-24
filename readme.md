@@ -121,11 +121,10 @@ youtube-rag-chatbot/
 ├── app.py                  # Streamlit UI
 ├── rag_pipeline.py         # Core RAG logic (importable)
 ├── rag.ipynb               # Original experiments & tuning
-├── requirements.txt        # Python dependencies
-├── .env.example            # Env var template
+├── requirements.txt        # Python dependencies          
 ├── .gitignore
 ├── README.md
-└── assets/                 # Diagrams + screenshots
+
 ```
 
 ---
@@ -148,15 +147,6 @@ Groq's LPU inference delivers sub-second latency on open-source models, essentia
 The prompt explicitly forbids making up facts. If the answer isn't in the retrieved context, the bot says "I don't know." This is the foundation of trustworthy RAG.
 
 ---
-
-## 🔮 Future Improvements
-
-- [ ] Hybrid retrieval (BM25 + vector) for higher recall
-- [ ] Reranking with a cross-encoder for precision
-- [ ] Timestamp-grounded source attribution
-- [ ] Multi-video comparison mode
-- [ ] Response caching to reduce LLM calls
-- [ ] Evaluation harness (Recall@K, faithfulness)
 
 ---
 
